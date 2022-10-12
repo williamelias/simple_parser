@@ -1,0 +1,8 @@
+Done actions:
+
+- Django project creation: django-admin startproject <project_name>
+
+
+Maked things:
+
+- Create browsable api
