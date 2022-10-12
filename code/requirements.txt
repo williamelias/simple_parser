@@ -1,3 +1,4 @@
+#django
 Django==4.1.2
 djangorestframework==3.14.0
 django-filter  # Filtering support
@@ -7,3 +8,5 @@ pyyaml
 uritemplate
 #db
 psycopg2-binary==2.9.4
+#server
+gunicorn==20.1.0

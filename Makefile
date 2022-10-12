@@ -57,7 +57,10 @@ collect:
 
 # target: build - call docker compose build
 build:
-	@docker-compose -f  compose.yml build --pull
+	@docker-compose  build --pull
 # target: up - call docker compose up
 up:
 	@docker-compose up
+# target: down - call docker compose down
+down:
+	@docker-compose down

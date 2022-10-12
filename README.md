@@ -29,3 +29,13 @@ Reference documentation:
 ## Postgres DB reference config
 
 - https://docs.docker.com/samples/django/
+
+## Docker containers reference
+
+- https://www.digitalocean.com/community/tutorials/how-to-scale-and-secure-a-django-application-with-docker-nginx-and-let-s-encrypt
+- https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
+
+
+## Maybe need
+
+- execute: chmod +x app/entrypoint.sh
