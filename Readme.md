@@ -1,3 +1,10 @@
+# Project Info
+
+### Entity Diagram
+
+(version:1.0)
+!['entities.png'](entities.png)
+
 ## Server Info
 
 ### Launch a server
