@@ -5,3 +5,5 @@ django-filter  # Filtering support
 markdown
 pyyaml 
 uritemplate
+#db
+psycopg2-binary==2.9.4

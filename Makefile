@@ -4,22 +4,23 @@
 
 SETTINGS={{ project_name }}.settings
 TEST_SETTINGS={{ project_name }}.test_settings
+MANAGE=code/manage.py
 
 # target: runserver - Execute default server
 runserver:
-	@python3 manage.py runserver
+	@python3 $(MANAGE) runserver
 
 # target: app - create new app django
 app:
-	@python3 manage.py startapp $(app_name)
+	@python3 $(MANAGE) startapp $(app_name)
 
 # target: migrate - run migrate django
 migrate:
-	@python3 manage.py migrate
+	@python3 $(MANAGE) migrate
 
 # target: makemigration - run makemigrations django
 makemigration:
-	@python3 manage.py makemigrations
+	@python3 $(MANAGE) makemigrations
 
 # target: all - Default target. Does nothing.
 all:
@@ -52,11 +53,11 @@ compass:
 
 # target: collect - calls the "collectstatic" django command
 collect:
-	python3 manage.py collectstatic  --noinput
+	python3 $(MANAGE) collectstatic  --noinput
 
-# target: rebuild - clean, update, compass, collect, then rebuild all data
-rebuild: clean update compass collect
-	python3 reset_db --settings=$(SETTINGS) --router=default --noinput
-	python3 syncdb --settings=$(SETTINGS) --noinput
-	python3 migrate --settings=$(SETTINGS)
-	#python3 loaddata --settings=$(SETTINGS) <your fixtures here>
+# target: build - call docker compose build
+build:
+	@docker-compose -f  compose.yml build --pull
+# target: up - call docker compose up
+up:
+	@docker-compose up

@@ -1,0 +1,8 @@
+# Trying to create a DDD software architecture
+
+Parts of the businness
+
+-> Research
+-> Paying
+-> UF
+-> relationship

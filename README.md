@@ -10,6 +10,9 @@
 ### Launch a server
 
 - with runserver: make runserver
+- with docker: 
+    - make build
+    - make up
 
 ### Browsable api configuration
 
@@ -21,3 +24,8 @@ Reference documentation:
 
 - https://www.django-rest-framework.org/topics/documenting-your-api/
 - https://www.django-rest-framework.org/api-guide/schemas/
+
+
+## Postgres DB reference config
+
+- https://docs.docker.com/samples/django/
